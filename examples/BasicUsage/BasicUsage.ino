@@ -46,19 +46,19 @@ void loop()
   // Temperature
   Serial.print(F("Temperature in Celsius: "));
   Serial.print(lm75a.getTemperature());
-  Serial.println(F(" *C"));
+  Serial.println(F(" °C"));
 
   Serial.print(F("Temperature in Farenheit: "));
   Serial.print(lm75a.getTemperatureInFarenheit());
-  Serial.println(F(" *F"));
+  Serial.println(F(" °F"));
 
   Serial.print(F("Hysteris temperature: "));
   Serial.print(lm75a.getHysterisisTemperature());
-  Serial.println(F(" *C"));
+  Serial.println(F(" °C"));
 
   Serial.print(F("OS trip temperature: "));
   Serial.print(lm75a.getOSTripTemperature());
-  Serial.println(F(" *C"));
+  Serial.println(F(" °C"));
 
   // Shutdown/Wake up
   Serial.println(F("Shutting down"));
